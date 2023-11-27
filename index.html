@@ -12,7 +12,43 @@
 </head>
 <body>
     <header></header>
-    <main></main>
+    <main class="container mt-5">
+        <form id="personaForm">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" required><br><br>
+          
+            <label for="edad" class="form-label">Edad:</label>
+            <input type="number" class="form-control" id="edad" required><br><br>
+          
+            <label for="dni" class="form-label">DNI:</label>
+            <input type="text" class="form-control" id="dni" required><br><br>
+          
+            <label for="sexo" class="form-label">Sexo (H/M):</label>
+            <input type="text" class="form-control" id="sexo" required><br><br>
+          
+            <label for="peso" class="form-label">Peso:</label>
+            <input type="number" class="form-control" id="peso" required><br><br>
+          
+            <label for="altura" class="form-label">Altura:</label>
+            <input type="number" class="form-control" id="altura" required><br><br>
+          
+            <label for="anioNacimiento" class="form-label">Año de Nacimiento:</label>
+            <input type="number" class="form-control" id="anioNacimiento" required><br><br>
+            
+            <div class="row">
+                <div class="col-sm-6 col-md-6 align-items-center justify-content-center">
+                    <button type="button" class="btn btn-primary" onclick="crearPersona()">Crear Persona</button>
+                    <button type="button" class="btn btn-info" onclick="mostrarGeneracion()">Mostrar Generación</button>
+   
+                </div>
+                <div class="col-sm-6 col-md-6 align-content-center justify-content-center">
+                    <button type="button" class="btn btn-warning" onclick="esMayorDeEdad()">Es Mayor de Edad</button>
+                    <button type="button" class="btn btn-secondary" onclick="mostrarInfo()">Mostrar Información</button>
+                </div>
+            </div>
+        
+          </form>
+    </main>
     <footer></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
